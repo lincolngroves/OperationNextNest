@@ -369,6 +369,25 @@
       color: var(--navy);
       font-size: 1.05rem;
     }
+    
+    /* New map link styles */
+    .figure-hint {
+      display: block;
+      margin-top: 8px;
+      color: var(--blue);
+      font-weight: 700;
+    }
+    
+    .figure-card > a {
+      display: block;
+    }
+    
+    .figure-card > a:focus-visible {
+      outline: 3px solid var(--blue);
+      outline-offset: -3px;
+    }
+
+/* Scenarios */
 
     /* Scenarios */
 
@@ -620,17 +639,19 @@
 <body>
   <header class="site-header">
     <div class="container site-header-inner">
-      #top
-        Operation Next Nest 🏡
-      </a>
-
-      <nav aria-label="Page sections">
-        #journeyJourney</a>
-        #baselineBaseline</a>
-        #stabilityStability</a>
-        #buildBuild Your Own</a>
-        #portfolioPortfolio</a>
-      </nav>
+      
+    <a class="brand" href="#top">
+      Operation Next Nest 🏡
+    </a>
+    
+    <nav aria-label="Page sections">
+      <a href="#journey">Journey</a>
+      <a href="#baseline">Baseline</a>
+      <a href="#stability">Stability</a>
+      <a href="#build">Build Your Own</a>
+      <a href="#portfolio">Portfolio</a>
+    </nav>
+      
     </div>
   </header>
 
@@ -788,11 +809,24 @@
         </div>
 
         <figure class="figure-card">
+          
+        <a
+          href="images/baseline-weighted-score-map.png"
+          aria-label="View the baseline weighted score map at full size"
+        >
           <img
-            src="images/baseline-weighted-score-mapption>
+            src="images/baseline-weighted-score-map.png"
+            alt="Map of baseline weighted neighborhood scores, with the top 10 candidate block groups outlined."
+            loading="lazy"
+            decoding="async"
+          >
+        </a>
+          
+          <figcaption>
             <strong>Baseline weighted score</strong>
             A view of the neighborhood landscape under one balanced
             set of priorities.
+          <span class="figure-hint">Select the map to view it at full size.</span>
           </figcaption>
         </figure>
 
@@ -884,15 +918,28 @@
           </p>
         </div>
 
-        <figure class="figure-card">
-          <img
-            src="images/neighborhood-stability-map.png"
-            alt="Neighborhood stability map showing how often neighborhoodstrong>
-            Darker neighborhoods were selected more frequently
-            across the balanced, commute-first, kid-friendly,
-            and amenity-heavy scenarios.
-          </figcaption>
-        </figure>
+      <figure class="figure-card">
+        
+      <a
+        href="images/neighborhood-stability-map.png"
+        aria-label="View the neighborhood stability map at full size"
+      >
+        <img
+          src="images/neighborhood-stability-map.png"
+          alt="Neighborhood stability map showing how often neighborhoods were selected across the four priority scenarios."
+          loading="lazy"
+          decoding="async"
+        >
+      </a>
+        
+        <figcaption>
+          <strong>Neighborhood stability across scenarios</strong>
+          Darker neighborhoods were selected more frequently
+          across the balanced, commute-first, kid-friendly,
+          and amenity-heavy scenarios.
+        <span class="figure-hint">Select the map to view it at full size.</span>  
+        </figcaption>
+      </figure>
 
       </div>
     </section>
@@ -1010,9 +1057,10 @@
               Explore the Repository
             </a>
 
-            #top
+            <a class="button button-secondary" href="#top">
               Back to Top
             </a>
+            
           </div>
         </div>
 
