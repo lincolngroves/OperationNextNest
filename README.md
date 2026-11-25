@@ -133,3 +133,8 @@ Most importantly, you'll see how analytics can help structure a real decision wh
 Operation Next Nest was developed as a teaching example for **SAS Viya Workbench for Learners** and the broader idea of the **polyglot data scientist** — choosing the right language or tool for each part of the analytical problem.
 
 After completing the three-part Operation Next Nest workflow, continue to **Notebook 04: Student Mini-Project Details** to extend the analysis and make the project your own.
+
+## GitHub Pages
+
+Want to see how everything comes together is this project in a high-level summary? Then visit the GitHub page, here: https://lincolngroves.github.io/OperationNextNest/
+
